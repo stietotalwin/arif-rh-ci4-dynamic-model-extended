@@ -1,13 +1,17 @@
 {
     "name": "stietotalwin/arif-rh-ci4-dynamic-model-extended",
     "description": "Creating CodeIgniter 4 Model on-the-fly with Relationship Built-in Feature.",
-    "homepage": "https://github.com/arif-rh/ci4-dynamic-model",
+    "homepage": "https://github.com/stietotalwin/arif-rh-ci4-dynamic-model-extended",
     "keywords": ["model", "ci4 model", "codeigniter model", "codeigniter4 model", "codeigniter4 relationship", "ci4 relationship model"],
     "license": "MIT",
     "authors": [
         {
             "name": "Arif Rahman Hakim",
             "email": "arifrahmanhakim.net@gmail.com"
+        },
+        {
+            "name": "Stie Total Win",
+            "email": "stietotalwin@gmail.com"
         }
     ],
     "require": {
@@ -25,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Arifrh\\DynaModel\\": "src"
+            "StieTotalWin\\DynaModel\\": "src"
         }
     },
 	"autoload-dev": {
 		"psr-4": {
-			"Arifrh\\DynaModelTests\\": "tests"
+			"StieTotalWin\\DynaModelTests\\": "tests"
 		}
 	},
 	"scripts": {

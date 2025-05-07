@@ -4,7 +4,7 @@
  * Base Api Controller that support using dynamic model as modelName
  */
 
-namespace ArifrhFeatStieTotalWin\DynaModel\Controllers;
+namespace StieTotalWin\DynaModel\Controllers;
 
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -24,7 +24,7 @@ class ApiController extends ResourceController
 
 		if (! class_exists($this->modelName))
 		{
-			$model = \ArifrhFeatStieTotalWin\DynaModel\DB::table($this->modelName);
+			$model = \StieTotalWin\DynaModel\DB::table($this->modelName);
 
 			$this->setModel($model);
 		}

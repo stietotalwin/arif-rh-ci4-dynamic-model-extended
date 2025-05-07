@@ -1,8 +1,8 @@
 <?php 
 
-namespace ArifrhFeatStieTotalWin\DynaModelTests\Models;
+namespace StieTotalWin\DynaModelTests\Models;
 
-use ArifrhFeatStieTotalWin\DynaModel\Models\DynaModel;
+use StieTotalWin\DynaModel\Models\DynaModel;
 
 class AuthorModel extends DynaModel
 {

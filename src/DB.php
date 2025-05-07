@@ -1,10 +1,10 @@
 <?php
 
-namespace ArifrhFeatStieTotalWin\DynaModel;
+namespace StieTotalWin\DynaModel;
 
 use \CodeIgniter\Config\Config;
-use ArifrhFeatStieTotalWin\DynaModel\Exceptions\DBException;
-use ArifrhFeatStieTotalWin\DynaModel\Models\DynaModel;
+use StieTotalWin\DynaModel\Exceptions\DBException;
+use StieTotalWin\DynaModel\Models\DynaModel;
 
 /**
  *  Starter Kit for creating composer package

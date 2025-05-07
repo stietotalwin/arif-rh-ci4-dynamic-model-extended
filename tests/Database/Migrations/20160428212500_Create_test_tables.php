@@ -1,4 +1,4 @@
-<?php namespace ArifrhFeatStieTotalWin\DynaModelTests\Database\Migrations;
+<?php namespace StieTotalWin\DynaModelTests\Database\Migrations;
 
 class Migration_Create_test_tables extends \CodeIgniter\Database\Migration
 {

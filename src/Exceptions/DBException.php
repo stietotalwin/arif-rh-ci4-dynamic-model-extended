@@ -1,4 +1,4 @@
-<?php namespace ArifrhFeatStieTotalWin\DynaModel\Exceptions;
+<?php namespace StieTotalWin\DynaModel\Exceptions;
 
 use CodeIgniter\Exceptions\ExceptionInterface;
 use CodeIgniter\Exceptions\FrameworkException;

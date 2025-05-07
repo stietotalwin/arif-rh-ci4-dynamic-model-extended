@@ -1,4 +1,4 @@
-<?php namespace ArifrhFeatStieTotalWin\DynaModelTests\Database\Seeds;
+<?php namespace StieTotalWin\DynaModelTests\Database\Seeds;
 
 class DynaModelTestSeeder extends \CodeIgniter\Database\Seeder
 {

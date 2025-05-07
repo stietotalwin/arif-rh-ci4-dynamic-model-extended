@@ -1,13 +1,13 @@
-<?php namespace ArifrhFeatStieTotalWin\DynaModelTests;
+<?php namespace StieTotalWin\DynaModelTests;
 
-use ArifrhFeatStieTotalWin\DynaModel\DB;
-use ArifrhFeatStieTotalWin\DynaModelTests\DynaModelTestCase as TestCase;
+use StieTotalWin\DynaModel\DB;
+use StieTotalWin\DynaModelTests\DynaModelTestCase as TestCase;
 
 final class DynaModelTest extends TestCase
 {
 	public function testInitFromClass():void
 	{
-		$authors = new \ArifrhFeatStieTotalWin\DynaModelTests\Models\AuthorModel();
+		$authors = new \StieTotalWin\DynaModelTests\Models\AuthorModel();
 		$this->assertInstanceOf(\CodeIgniter\Model::class, $authors);
 	}
 

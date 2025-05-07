@@ -1,7 +1,7 @@
-<?php namespace ArifrhFeatStieTotalWin\DynaModelTests;
+<?php namespace StieTotalWin\DynaModelTests;
 
-use ArifrhFeatStieTotalWin\DynaModel\DB;
-use ArifrhFeatStieTotalWin\DynaModelTests\DynaModelTestCase as TestCase;
+use StieTotalWin\DynaModel\DB;
+use StieTotalWin\DynaModelTests\DynaModelTestCase as TestCase;
 
 class DBTest extends TestCase
 {
@@ -19,7 +19,7 @@ class DBTest extends TestCase
      */
 	public function testDbNonExistingTable()
     {
-        $this->expectException(\ArifrhFeatStieTotalWin\DynaModel\Exceptions\DBException::class);
+        $this->expectException(\StieTotalWin\DynaModel\Exceptions\DBException::class);
         $categories = DB::table('categories');
     }
 }

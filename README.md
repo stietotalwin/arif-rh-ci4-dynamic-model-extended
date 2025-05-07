@@ -19,7 +19,7 @@ Dynamic Model for CodeIgniter 4
 ### Simple
 ```` 
     // creating postModel on-the-fly, just pass a table name
-    $postModel = \ArifrhFeatStieTotalWin\DynaModel\DB::table('posts');
+    $postModel = \StieTotalWin\DynaModel\DB::table('posts');
 
     // then you can use it, to get all posts
     $postModel->findAll();

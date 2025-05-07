@@ -3,12 +3,12 @@
 /**
  * Main Trait for DynaModel Package
  *
- * @package ArifrhFeatStieTotalWin\DynaModel
+ * @package StieTotalWin\DynaModel
  * @author  Arif RH <arifrahmanhakim.net@gmail.com>
  * @license MIT
  */
 
-namespace ArifrhFeatStieTotalWin\DynaModel\Models;
+namespace StieTotalWin\DynaModel\Models;
 
 /**
  * This trait can be use inside existing \CodeIgniter\Model
@@ -808,7 +808,7 @@ trait DynaModelTrait
 			}
 
 			/**
-			 * @var \ArifrhFeatStieTotalWin\DynaModel\Models\DynaModel $this
+			 * @var \StieTotalWin\DynaModel\Models\DynaModel $this
 			 */
 			$this->filterRelationship($alias, $this, $alias);
 		}
@@ -839,7 +839,7 @@ trait DynaModelTrait
 
 		if (empty($this->relationships[$alias]))
 		{
-			$related = \ArifrhFeatStieTotalWin\DynaModel\DB::table($relationInfo['table']);
+			$related = \StieTotalWin\DynaModel\DB::table($relationInfo['table']);
 
 			$fields = $related->getFieldInfo();
 
@@ -910,7 +910,7 @@ trait DynaModelTrait
 
 					$keys = $this->getColumns($parentData, $relationInfo['primaryKey']);
 
-					$related = \ArifrhFeatStieTotalWin\DynaModel\DB::table($relationInfo['table']);
+					$related = \StieTotalWin\DynaModel\DB::table($relationInfo['table']);
 
 					$related->setOrderBy($relationInfo['orderBy']);
 					$related->builder->whereIn($relationInfo['relationId'], $keys);
@@ -1021,7 +1021,7 @@ trait DynaModelTrait
 	 * Filter relationship data
 	 *
 	 * @param string                             $alias relationship alias
-	 * @param \ArifrhFeatStieTotalWin\DynaModel\Models\DynaModel $model model to be filtered
+	 * @param \StieTotalWin\DynaModel\Models\DynaModel $model model to be filtered
 	 * @param string                             $table
 	 */
 	protected function filterRelationship($alias, $model, $table):void

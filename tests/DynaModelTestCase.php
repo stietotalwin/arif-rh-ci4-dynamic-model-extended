@@ -1,9 +1,9 @@
-<?php namespace ArifrhFeatStieTotalWin\DynaModelTests;
+<?php namespace StieTotalWin\DynaModelTests;
 
 use Config\Services;
 use Config\Database;
 use Config\Migrations;
-use ArifrhFeatStieTotalWin\DynaModel\DB;
+use StieTotalWin\DynaModel\DB;
 use PHPUnit\Framework\TestCase;
 use CodeIgniter\Database\BaseConnection;
 use CodeIgniter\Exceptions\ConfigException;
@@ -25,7 +25,7 @@ class DynaModelTestCase extends TestCase
 	 * @var string|mixed[]
 	 */
 	protected $seed = [
-		'ArifrhFeatStieTotalWin\DynaModelTests\Database\Seeds\DynaModelTestSeeder'
+		'StieTotalWin\DynaModelTests\Database\Seeds\DynaModelTestSeeder'
 	];
 
 	/**
@@ -36,7 +36,7 @@ class DynaModelTestCase extends TestCase
 	 *
 	 * @var string|mixed[]|null
 	 */
-	protected $namespace = 'ArifrhFeatStieTotalWin\DynaModelTests';
+	protected $namespace = 'StieTotalWin\DynaModelTests';
 
 	/**
 	 * The path to the seeds directory.

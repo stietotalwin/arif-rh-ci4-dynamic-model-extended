@@ -5,17 +5,17 @@
  * Give it Relationship Feature built in
  */
 
-namespace ArifrhFeatStieTotalWin\DynaModel\Models;
+namespace StieTotalWin\DynaModel\Models;
 
 use CodeIgniter\Database\BaseConnection;
 use CodeIgniter\Validation\ValidationInterface;
 use CodeIgniter\Model;
-use ArifrhFeatStieTotalWin\DynaModel\Models\DynaModelTrait;
+use StieTotalWin\DynaModel\Models\DynaModelTrait;
 
 /**
  * DynaModel - BaseModel that use DynaModelTrait
  *
- * @package ArifrhFeatStieTotalWin\DynaModel
+ * @package StieTotalWin\DynaModel
  */
 class DynaModel extends Model
 {
