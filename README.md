@@ -1,9 +1,11 @@
 # DynaModel
-Dynamic Model for CodeIgniter 4
-===============================
-[![Build Status](https://travis-ci.com/arif-rh/ci4-dynamic-model.svg?branch=master)](https://travis-ci.com/arif-rh/ci4-dynamic-model)  [![Coverage Status](https://coveralls.io/repos/github/arif-rh/ci4-dynamic-model/badge.svg?branch=master)](https://coveralls.io/github/arif-rh/ci4-dynamic-model?branch=master)
+
+Dynamic Model for CodeIgniter 4 Extended by Stie Total Win Forked from Arif RH
+
+================================================================================
 
 ## Feature
+
 * Dynamically Creating the Model on-the-fly
 * Support One-to-One / Many-to-One relationship
 * Support One-to-Many relationship
@@ -17,7 +19,8 @@ Dynamic Model for CodeIgniter 4
 ## Usage
 
 ### Simple
-```` 
+
+````php
     // creating postModel on-the-fly, just pass a table name
     $postModel = \StieTotalWin\DynaModel\DB::table('posts');
 
@@ -26,7 +29,8 @@ Dynamic Model for CodeIgniter 4
 ````
 
 ### Many-to-One Relationship
-````
+
+````php
     // assume that posts always belongs to one author using author_id 
     $postModel->belongsTo('authors);
 
@@ -51,7 +55,8 @@ Dynamic Model for CodeIgniter 4
 ````
 
 ### One-to-Many Relationship
-````
+
+````php
     $postModel->hasMany('comments');
 
     // this will return posts with all related comments
@@ -61,9 +66,10 @@ Dynamic Model for CodeIgniter 4
     $postModel->with('comments')->whereRelation('comments', ['status' => 'approved'])->findAll();
     // will display all posts with approved comments only
 ````
+
 ## Testing
 
-````
+````bash
     composer test
 
     // or
