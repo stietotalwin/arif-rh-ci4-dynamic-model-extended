@@ -1,0 +1,45 @@
+{
+    "name": "stietotalwin/arif-rh-ci4-dynamic-model-extended",
+    "description": "Creating CodeIgniter 4 Model on-the-fly with Relationship Built-in Feature.",
+    "homepage": "https://github.com/arif-rh/ci4-dynamic-model",
+    "keywords": ["model", "ci4 model", "codeigniter model", "codeigniter4 model", "codeigniter4 relationship", "ci4 relationship model"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arif Rahman Hakim",
+            "email": "arifrahmanhakim.net@gmail.com"
+        }
+    ],
+    "require": {
+		"php": ">=7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "codeigniter4/framework": "^4.0",
+        "php-coveralls/php-coveralls": "^2.2",
+        "phpstan/phpstan": "0.12.34",
+        "phpstan/extension-installer": "1.0.4",
+        "phpstan/phpstan-phpunit": "^0.12.8",
+        "codeigniter4/codeigniter4-standard": "^1.0",
+        "squizlabs/php_codesniffer": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arifrh\\DynaModel\\": "src"
+        }
+    },
+	"autoload-dev": {
+		"psr-4": {
+			"Arifrh\\DynaModelTests\\": "tests"
+		}
+	},
+	"scripts": {
+        "test": "phpunit",
+        "testdox": "phpunit --testdox",
+        "analyse": "phpstan analyse",
+        "post-update-cmd": [
+            "@composer dump-autoload",
+            "bash src/bin/setup.sh"
+        ]
+	}
+}
