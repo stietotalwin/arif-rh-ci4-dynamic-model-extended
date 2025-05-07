@@ -7,5 +7,4 @@ docs/
 
 phpstan.neon
 phpunit.xml
-composer.lock
 *.cache
