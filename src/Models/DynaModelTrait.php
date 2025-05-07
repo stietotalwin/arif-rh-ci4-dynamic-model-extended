@@ -389,9 +389,11 @@ trait DynaModelTrait
 	 */
 	protected function doProtectFields(array $data): array
 	{
+		// First validate to remove fields not in the table's schema
 		$data = $this->validateFields($data);
 
-		if (! empty($this->protectedFields))
+		// Next filter out protected fields
+		if (!empty($this->protectedFields))
 		{
 			foreach ($data as $key => $val)
 			{
@@ -402,6 +404,7 @@ trait DynaModelTrait
 			}
 		}
 
+		// Then let the parent class handle allowedFields
 		return parent::doProtectFields($data);
 	}
 
@@ -868,7 +871,12 @@ trait DynaModelTrait
 		 */
 		$db = $this->db;
 
-		$this->builder->join($db->prefixTable($relationInfo['table']) . " AS {$alias}", "{$alias}.{$relationInfo['primaryKey']} = {$this->table}.{$relationInfo['relationId']}");
+		// Use proper prefixed table names in the join condition
+		$this->builder->join(
+			$db->prefixTable($relationInfo['table']) . " AS {$alias}", 
+			"{$alias}.{$relationInfo['primaryKey']} = {$this->table}.{$relationInfo['relationId']}", 
+			'left'
+		);
 	}
 
 	/**

@@ -45,5 +45,10 @@
             "@composer dump-autoload",
             "bash src/bin/setup.sh"
         ]
-	}
+	},
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
 }

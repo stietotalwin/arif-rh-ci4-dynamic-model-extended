@@ -14,7 +14,7 @@ Dynamic Model for CodeIgniter 4 Extended by Stie Total Win Forked from Arif RH
 
 ## Installation
 
-````composer require arif-rh/ci4-dynamic-model````
+````composer require stietotalwin/arif-rh-ci4-dynamic-model-extended````
 
 ## Usage
 
